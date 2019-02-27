@@ -7,3 +7,11 @@ body {
 	font-size: 100%;
 	font-family: sans-serif;
 }
+
+.app-footer {
+  background-color: #222;
+  color: white;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 1rem;
+}
