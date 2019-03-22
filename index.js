@@ -24,3 +24,6 @@ updateImage(){
 		     
 	return new_image;
 }
+
+var dt = new Date();
+var currentYr = dt.getFullYear();
