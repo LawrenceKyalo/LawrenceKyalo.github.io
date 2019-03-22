@@ -3,7 +3,7 @@
 <head>
 	<script>
 		var dt = new Date();
-        var currentYr = dt.getFullYear();
+        documnet.getElementById("date").innerHTML = dt;
 	</script>
 	<link href="./style.css" media="screen" rel="stylesheet" type="text/css" />
 	<title> Default </title>
@@ -32,7 +32,7 @@
 	</article>
 
 	<footer class="app-footer">
-		<p> Copyright &copy; DevLawrence. All rights reserved. </p>
+		<p> Copyright &copy; DevLawrence <span id="date"></span>. All rights reserved. </p>
 	</footer>
 </body>
 </html>
