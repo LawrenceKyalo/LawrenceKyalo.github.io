@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script>
-		var dt = new Date();
-        document.getElementById("demo").innerHTML = dt;
+	
+	<script type="text/javascript">
+  		document.write(new Date().getFullYear());
 	</script>
+	
 	<link href="./style.css" media="screen" rel="stylesheet" type="text/css" />
 	<title> Portfolio </title>
 </head>
@@ -19,7 +20,7 @@
 		<img src="./images/Lawrence Kyalo (003).jpg" alt="Lawrence Kyalo" height="42" width="42">
 		<br/>
 		<caption><i>Lawrence Kyalo, </i> Lead Developer </caption>
-		<p id="demo"></p>
+		
 	</div>
 	<nav>
 		<ul>
@@ -33,7 +34,7 @@
 	</article>
 
 	<footer class="app-footer">
-		<p> Copyright &copy; DevLawrence <span id="date"></span>. All rights reserved. </p>
+		<p> Copyright &copy; DevLawrence <?php echo date("Y"); ?>. All rights reserved. </p>
 	</footer>
 </body>
 </html>
