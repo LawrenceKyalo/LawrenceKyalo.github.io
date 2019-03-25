@@ -27,3 +27,9 @@ updateImage(){
 
 var dt = new Date();
 var currentYr = dt.getFullYear();
+
+
+ var currYr = new Date().getFullYear();
+ document.getElementById("year").innerHTML = currYr;
+ console.log(currYr);
+	
