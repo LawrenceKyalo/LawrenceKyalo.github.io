@@ -1,4 +1,15 @@
 //to add javascript code
+var app = angular.module('Portfolio', []);
+app.controller('PortfolioCtrl', function($scope){
+	$scope.name = "Lawrence Kyalo";
+	$scope.title = "Lead Developer";
+
+});
+
+
+
+
+
 onload(){
 	console.log("Ready");
 }

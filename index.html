@@ -3,11 +3,22 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
 	</script>
+	<script>
+		var app = angular.module('Portfolio', []);
+		app.controller('PortfolioCtrl', function($scope){
+		$scope.name = "Lawrence Kyalo";
+		$scope.title = "Lead Developer";
+
+		$scope.year = new Date().getFullYear();
+
+	});
+	
+	</script>
 	<link href="./style.css" media="screen" rel="stylesheet" type="text/css" />
 	<title> Portfolio </title>
 </head>
 <body>
-<div>
+<div ng-app="Portfolio" ng-controller="PortfolioCtrl">
 	<header>
 		<hgroup>
 			<h1>Sorry, we are currently experiencing technical hitches. We'll be back soon!</h1>
@@ -18,7 +29,7 @@
 	<div class="ldev">
 		<img src="./images/Lawrence Kyalo (003).jpg" alt="Lawrence Kyalo" height="42" width="42">
 		<br/>
-		<caption><i>Lawrence Kyalo, </i> Lead Developer </caption>
+		<caption> {{name}} <i> {{title}} </i> </caption>
 		<p id="year"></p>
 	</div>
 	<nav>
@@ -33,7 +44,7 @@
 	</article>
 
 	<footer class="app-footer">
-		<p> Copyright &copy; DevLawrence 2019 . All rights reserved. </p>
+		<p> Copyright &copy; DevLawrence {{year}} . All rights reserved. </p>
 	</footer>
 </div>
 </body>
