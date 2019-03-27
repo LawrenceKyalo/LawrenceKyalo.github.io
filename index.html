@@ -11,6 +11,12 @@
 
 		$scope.year = new Date().getFullYear();
 
+		app.directive("footerDir", function(){
+			return{
+				template: "<p> Copyright &copy; DevLawrence {{year}} . All rights reserved. </p>"
+			};
+		});
+
 	});
 	
 	</script>
@@ -44,7 +50,7 @@
 	</article>
 
 	<footer class="app-footer">
-		<p> Copyright &copy; DevLawrence {{year}} . All rights reserved. </p>
+		<footer-dir></footer-dir>
 	</footer>
 </div>
 </body>
