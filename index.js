@@ -3,15 +3,10 @@ var app = angular.module('Portfolio', []);
 app.controller('PortfolioCtrl', function($scope){
 	$scope.name = "Lawrence Kyalo";
 	$scope.title = "Lead Developer";
-
 });
 
-
-
-
-
 onload(){
-	console.log("Ready");
+	console.log("portfolio loading...");
 }
  function getCurrentImage(){
  	if(date >= current_date){
@@ -40,7 +35,8 @@ var dt = new Date();
 var currentYr = dt.getFullYear();
 
 
- var currYr = new Date().getFullYear();
- document.getElementById("year").innerHTML = currYr;
- console.log(currYr);
+ //var currYr = new Date().getFullYear();
+//var currYr = currentYr;
+ document.getElementById("year").innerHTML = currentYr;
+ console.log(currentYr);
 	
