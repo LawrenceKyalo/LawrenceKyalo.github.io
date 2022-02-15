@@ -1,2 +1,2 @@
-# DevLawrence.github.io
+# lawrencekyalo.github.io
 Online portfolio
