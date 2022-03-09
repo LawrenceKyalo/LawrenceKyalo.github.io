@@ -2,7 +2,7 @@
 var app = angular.module('Portfolio', []);
 app.controller('PortfolioCtrl', function($scope){
 	$scope.name = "Lawrence Kyalo";
-	$scope.title = "Lead Developer";
+	$scope.title = "el Patron";
 });
 
 onload(){
