@@ -1,4 +1,5 @@
 //to add javascript code
+console.log('console logger')
 var app = angular.module('Portfolio', []);
 app.controller('PortfolioCtrl', function($scope){
 	$scope.name = "Lawrence Kyalo";
