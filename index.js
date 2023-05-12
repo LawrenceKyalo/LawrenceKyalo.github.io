@@ -1,0 +1,43 @@
+//to add javascript code
+console.log('console logger')
+var app = angular.module('Portfolio', []);
+app.controller('PortfolioCtrl', function($scope){
+	$scope.name = "Lawrence Kyalo";
+	$scope.title = "el Patron";
+});
+
+onload(){
+	console.log("portfolio loading...");
+}
+ function getCurrentImage(){
+ 	if(date >= current_date){
+		current_image = image.getByDate(lastDate);
+	} else{
+		current_image = image.getByDate(current_date);
+	}
+	 
+	this.current_image = current_image;
+	 return current_image;
+ }
+
+updateImage(){
+	var current_image;
+	var new_image;
+	
+	temp = this.get(current_image);
+	new = this.get(new_image);
+	
+	temp.replace(new);
+		     
+	return new_image;
+}
+
+var dt = new Date();
+var currentYr = dt.getFullYear();
+
+
+ //var currYr = new Date().getFullYear();
+//var currYr = currentYr;
+ document.getElementById("year").innerHTML = currentYr;
+ console.log(currentYr);
+	

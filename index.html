@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+	</script>
+	<script>
+		var app = angular.module('Portfolio', []);
+		app.controller('PortfolioCtrl', function($scope){
+		$scope.name = "Lawrence Kyalo";
+		$scope.title = "el Patron";
+
+		$scope.year = new Date().getFullYear();
+
+		app.directive("footerDir", function(){
+			return{
+				template: "<span> Footer </span>"
+			};
+		});
+
+	});
+	
+	</script>
+	<link href="./style.css" media="screen" rel="stylesheet" type="text/css" />
+	<title> Portfolio </title>
+</head>
+<body>
+<div ng-app="Portfolio" ng-controller="PortfolioCtrl">
+	<header>
+		<hgroup>
+			<h1>Sorry, we are currently on Maintenance. We'll be back soon!</h1>
+
+
+		</hgroup>
+	</header>
+	<div class="ldev">
+		<img src="./images/the_joker.jfif" alt="Lawrence Kyalo" height="" width="">
+		<br/>
+		<caption> <a href="https://github.com/LawrenceKyalo" target="_blank"> {{name}} </a>, <i> {{title}} </i> </caption>
+		<footer-dir></footer-dir>
+	</div>
+	<nav>
+		<ul>
+			<li ng-repeat="item in items"> </li>
+		</ul>
+	</nav>
+	<article>
+		<section></section>
+		<section></section> <aside></aside>
+		<section></section>
+	</article>
+
+	<footer class="app-footer">
+		<p> Copyright &copy;Lawrence Kyalo {{year}} . All rights reserved. </p>
+	</footer>
+</div>
+</body>
+</html>
